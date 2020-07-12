@@ -9,7 +9,7 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(1) && currentPuObject)
+        if (Input.GetMouseButtonDown(0) && currentPuObject)
         {
             PickUp(); //pick up item
         }
@@ -36,7 +36,11 @@ public class PlayerInteraction : MonoBehaviour
     }
     void PickUp()
     {
-        Inventory.instance.Add(currentPuObject.GetComponent<Pickup>().item);
-        Destroy(currentPuObject);
+
+        bool wasPickedUp = Inventory.instance.Add(currentPuObject.GetComponent<Pickup>().item);
+        if (wasPickedUp)
+        {
+            Destroy(currentPuObject);
+        }
     }
 }
