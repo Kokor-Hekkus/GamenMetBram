@@ -1,0 +1,9 @@
+﻿
+
+using System;
+using UnityEngine.Events;
+
+namespace ProjectMarc
+{
+    [Serializable] public class UnityBoolEvent : UnityEvent<bool> { }
+}
