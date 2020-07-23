@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace ProjectMarc
-{
+
     public abstract class BaseGameEvent<T> : ScriptableObject
     {
         private readonly List<IGameEventListener<T>> eventListeners = new List<IGameEventListener<T>>();
@@ -31,4 +30,3 @@ namespace ProjectMarc
             }
         }
     }
-}

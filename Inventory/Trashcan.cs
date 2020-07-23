@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-    public interface IGameEventListener<T>
+    public class Trashcan : MonoBehaviour
     {
-        void OnEventRaised(T item);
+
     }
