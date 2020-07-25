@@ -18,9 +18,9 @@ using UnityEngine;
         {
             if (Input.GetMouseButtonDown(0) && currentPuObject)
             {
-                pickUp.Interact();
+                pickUp.Interact(gameObject); //zou ook transform.root.gameObject kunnen zijn
 
-            }
+        }
         }
 
 

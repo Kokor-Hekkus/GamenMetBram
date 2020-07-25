@@ -151,7 +151,7 @@ using UnityEngine;
         ItemSlot firstSlot = itemSlots[indexOne];
         ItemSlot secondSlot = itemSlots[indexTwo];
 
-        if (firstSlot == secondSlot)
+        if (firstSlot.Equals(secondSlot))
         {
             return;
         }
